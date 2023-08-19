@@ -40,12 +40,16 @@
                   <input name="senha" type="password" class="form-control" placeholder="Senha">
                 </div>
 
-                <!-- aqui foi feita uma condição para adicionar uma mensagem de aviso quando os dados de login estiverem incorretos
-                foi feita a verificação se o parametro login foi passado na url caso acontencer algum erro no login e tbm junto se o valor do
-                parametro for erro, aí ele mostrara uma mensagem discreta logo abaixo do input da senha -->
+                <!-- aqui foi feita uma condição para adicionar uma tratativa em caso de login incorreto ou o acesso direto de paginas restritas -->
                 <?php if(isset($_GET['login']) && $_GET['login'] == 'erro') { ?>
                   <div class="text-danger">
                     Usuário ou senha inválido(s)
+                  </div>
+                  <?php } ?>
+
+                  <?php if(isset($_GET['login']) && $_GET['login'] == 'erro2' || isset($_GET['login']) && $_GET['login'] == 'erro3' || isset($_GET['login']) && $_GET['login'] == 'erro4') { ?>
+                  <div class="text-danger">
+                    Faça login antes de acessas as paginas protegidas
                   </div>
                   <?php } ?>
 

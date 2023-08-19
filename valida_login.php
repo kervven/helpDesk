@@ -1,4 +1,10 @@
 <?php
+
+    /*esse session start significa que a partir dele o codigo tem uma sessão por navegador, com isso conseguimos manipular paginas de acordo com a instancia do navegador por cliente, por exemplo, eu faço login no navegador chrome em um pc, logo, as paginas após o meu login serão instanciadas naquele pc caso o login for correto, mas essa intancia tem um tempo de duração padrao de 3 horas... dá pra fazer muitas coisas com o session para controlar a segurança de nossas paginas web. */
+
+    session_start();
+
+
     /*atraves do metodo GET é possivel recuperar os dados através de uma requisição http, o problema disso é que esses dados ficam expostos na url do navegador. Para encapusular esses dados, usamos outro metodo de requisição chamado POST. OBS: os atributos do formulario precisam ter name, no caso, as tags que ficam dentro da tag form, como inputs, precisam ter o atributo name, assim esse atributo será um elemento da array do GET OU POST e assim podemos acessa-las separadamente*/
 
     //print_r($_GET);
@@ -48,9 +54,11 @@
     /*em seguida é feita a verificação se a variavel foi alterada para true, caso se for, o bloco de codigo será executado, caso nao for, o bloco do else será executado*/ 
 
     if($usuario_autenticado){
-        echo 'Usuario autenticado com sucesso';
+        header('Location: home.php');
+        $_SESSION['autenticado'] =  'SIM';
     } else {
         //o header é um metodo nativo do php que, transfere o usuario para a pagina que está dentro do comando Location, no caso, para a pagina index.php e em seguida a ? serve como o metodo GET, mostrando tudo como após a interrogação como parametro de erro na url do navegador
+        $_SESSION['autenticado'] = 'NAO';
         header('Location: index.php?login=erro');
     }
 
