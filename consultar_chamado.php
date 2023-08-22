@@ -24,6 +24,11 @@
         <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
         App Help Desk
       </a>
+      <li class="navbar-nav">
+        <ul class="navbar-item">
+          <a class="navbar-item" href="logoff.php">SAIR</a>
+        </ul>
+      </li>
     </nav>
 
     <div class="container">    

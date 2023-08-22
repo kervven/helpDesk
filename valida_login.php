@@ -36,6 +36,7 @@
     $usuarios_app = array(
         array('email' => 'kervensilvva@gmail.com', 'senha' => '123456'),
         array('email' => 'jessicasilva@gmail.com', 'senha' => 'abcdef'),
+        array('email' => 'lucasmatheus@gmail.com', 'senha' => '123456'),
     );
 
     //variavel que verifica se autenticação foi realizada
