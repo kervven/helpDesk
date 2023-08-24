@@ -17,6 +17,6 @@ $arquivo = fopen('arquivo.txt', 'a');
 fwrite($arquivo, "\n" . $texto);
 //fechando o arquivo
 fclose($arquivo);
-
+//logo apos o registro de chamada a pagina de abrir chamados é mostrada para o usuario
 header('Location: abrir_chamado.php');
 ?>
