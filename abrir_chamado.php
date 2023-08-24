@@ -29,7 +29,7 @@ require_once("validador_acesso.php");
     </a>
     <li class="navbar-nav">
       <ul class="navbar-item">
-        <a class="navbar-item" href="logoff.php">SAIR</a>
+        <a class="navbar-link" href="logoff.php">SAIR</a>
       </ul>
     </li>
   </nav>
