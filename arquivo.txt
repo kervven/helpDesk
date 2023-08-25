@@ -1,3 +1,2 @@
-impressora quebrou#Impressora#nao ta pegando a tinta
-monitor ta com tela azul#Hardware#entao, só sei que foi assim
-teclado está com falhas#Hardware#as teclas de numero não estão funcionando
+3#impressora parou de funcionar#Impressora#impressora parou de pegar a tinta
+2#teclado está com falhas#Hardware#alguns teclas estão funcionando e outras não
