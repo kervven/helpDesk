@@ -1,2 +1,0 @@
-3#impressora parou de funcionar#Impressora#impressora parou de pegar a tinta
-2#teclado está com falhas#Hardware#alguns teclas estão funcionando e outras não
